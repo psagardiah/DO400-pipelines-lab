@@ -6,7 +6,6 @@ booleanParam(name: "RUN_INTEGRATION_TESTS", defaultValue: true)
 stages {
 stage('Test') {
 parallel {
-...output omitted...
 stage('Integration tests') {
 when {
 expression { return params.RUN_INTEGRATION_TESTS }
